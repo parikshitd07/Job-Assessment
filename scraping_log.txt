@@ -1,0 +1,67 @@
+/Users/vivek4/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+================================================================================
+FULL SHL CATALOG SCRAPER
+================================================================================
+
+Target: 377+ Individual Test Solutions
+This may take 10-15 minutes...
+
+Fetching product catalog...
+Found 20 product URLs
+Warning: Found fewer than 100 URLs. Expanding search...
+
+Scraping 24 assessments...
+[1/24] ✓ .NET Framework 4.5
+[2/24] ✓ .NET MVC (New)
+[3/24] ✓ Apprentice 8.0 Job Focused Assessment
+[4/24] ✓ Cashier Solution
+[5/24] ✓ Bank Collections Agent - Short Form
+[6/24] ✓ Bank Administrative Assistant - Short Form
+[7/24] ✓ Bookkeeping, Accounting, Auditing Clerk Short Form
+[8/24] ✓ Accounts Payable Simulation (New)
+[9/24] ✓ ADO.NET (New)
+[10/24] ✓ Global Skills Development Report
+[11/24] ✓ Bank Operations Supervisor - Short Form
+[12/24] ✓ Apprentice + 8.0 Job Focused Assessment
+[13/24] ✓ Accounts Payable (New)
+[14/24] ✓ .NET MVVM (New)
+[15/24] ✓ Account Manager Solution
+[16/24] ✓ Accounts Receivable Simulation (New)
+[17/24] ✓ .NET WCF (New)
+[18/24] ✓ Accounts Receivable (New)
+[19/24] ✓ .NET XAML (New)
+[20/24] ✓ Agency Manager Solution
+[21/24] ✓ Bilingual Spanish Reservation Agent Solution
+[22/24] ✓ Branch Manager - Short Form
+[23/24] ✓ .NET WPF (New)
+[24/24] ✓ Administrative Professional - Short Form
+
+✓ Successfully scraped 24 assessments
+
+================================================================================
+SCRAPING COMPLETE: 24 assessments
+================================================================================
+⚠ WARNING: Only scraped 24 assessments (need 377+)
+
+✓ Saved to shl_full_catalog.json
+
+Sample assessment:
+{
+  "url": "https://www.shl.com/products/product-catalog/view/net-framework-4-5/",
+  "name": ".NET Framework 4.5",
+  "description": ".NET Framework 4.5: The.NET Framework 4.5 test measures knowledge of .NET environment. Designed for experienced users, this test covers the following topics: Application\u2026",
+  "test_type": "K",
+  "duration": 0,
+  "adaptive_support": "No",
+  "remote_support": "Yes",
+  "categories": [
+    "Knowledge & Skills",
+    "Personality & Behavior",
+    "Cognitive",
+    "Communication",
+    "Sales",
+    "Leadership"
+  ],
+  "full_text": ".NET Framework 4.5 | SHL Search Outdated browser detected We recommend upgrading to a modern browser. If you choose to continue with your current browser we cannot guarantee your experience. I understand and wish to continue Latest browser options Careers Our Culture Our Teams Our People Join SHL Latest Jobs Contact Practice Tests Support Candidate Support Answers to frequently asked questions for technical queries when taking a test Client Support Answers to frequently asked questions about our products, services and supporting documentation Contact Us Get help from our support teams Practice Site & Advice View support articles and production documentation Browser Check Verifies if your computer's settings are compatible with the test Login Buy Online Language English (Global) English (India) English (Middle East & North Africa) English (South Africa) \u7b80\u4f53\u4e2d\u6587 (Chinese) \u65e5\u672c\u8a9e (Japanese) Global Offices SHL's locations around the world. Solutions Solutions Talent Acquisition Graduate & Early Careers Manager Hiring Interviewing Technology Hiring Professional Hiring Volume Hiring BPO Hiring Contact Center Hiring Retail Hiring Talent Management Succession Planning Enterprise Leader Development High Potential Identification Sales Transformation Manager Development Skills Development Talent Mobility Interactive Demos Try an online demo of our solutions. Talent Acquisition Demos Talent Management Demos View all SHL Solutions Explore all Talent Acquisition and Talent Management solutions. Guides Explore Two Essential Guides for Smarter Skills Strategies Learn how leading HR teams are closing skills gaps and turning data into development that drives retention, agility, and growth. Read Guide Products Products Featured Products Occupational Personality Questionnaire (OPQ) Job-Focused Assessments (JFA) Motivational Questionnaire (MQ) Situational Judgment Tests (SJT) SHL Verify SHL 360 Assessments Behavioral Assessments Cognitive Assessments Personality Assessments Video Interviews Skills & Simulations Call Center Simulations Business Skills Coding Simulations Technical Skills Language Evaluation View all SHL Products Get the ultimate view of potential with SHL\u2019s unmatched portfolio of assessments and interview technology. Services Managed Services Training Services SHL Certification (OPQ/Verify) Training Calendar Outsourced Assessments (VADC) Product Catalog Find assessments that best meet your needs. Browse our extensive product catalog for science-backed assessments that evaluate cognitive ability, personality, behavior, skills, and more. View Product Catalog HR Priorities HR Priorities Explore the latest HR priorities and insights on workforce trends. AI at Work AI Readiness Skills-Based Organizations Skills-Based Hiring Skills-Based Talent Management Decisions with People Data Manager and Leader Development Point of View Paper Harnessing AI in Talent Assessment Choosing the right AI partner means the difference between progress and risk. Explore SHL's approach to transparent AI in assessment \u2013 what we offer, how it works, and why it matters. Read Paper Resources Resources Thought Leadership from Our Experts Stay up to date with our latest resources, curated by experts in their field. View all SHL Resources By Type Blogs eBooks, Guides, and Tools Research & Reports Webinars Demos On-Demand Customer Stories View all Resources SHL Labs Advancing Talent with Innovation and Insights Candidate Experience People Insights Diversity, Inclusion, and Accessibility Our Science Research Publications Featured Report HR Skills Insights Discover the key skills HR professionals need now and in the future, and how they differ by job level and region. Read Report About Why SHL Trusted Talent Intelligence for Confident People Decisions Unlock workforce potential with powerful people science, assessment data, and transparent AI. Learn More Company Leadership Team Global Offices Careers News & Events Press Releases In the News Awards & Accolades Events & Conferences Partners Research Partners Skills Partner Program Resellers Contact Sales Inquiries Client Support Candidate Support Media Inquiries Research Program Unlock AI-Readiness Skills in Your Workforce Be part of our Superworker Skills Research Program Learn More Search icon Book a Demo Careers Our Culture Our Teams Our People Join SHL Latest Jobs Contact Practice Tests Support Candidate Support Answers to frequently asked questions for technical queries when taking a test Client Support Answers to frequently asked questions about our products, services and supporting documentation Contact Us Get help from our support teams Practice Site & Advice View support articles and production documentation Browser Check Verifies if your computer's settings are compatible with the test Login Buy Online Language English (Global) English (India) English (Middle East & North Africa) English (South Africa) \u7b80\u4f53\u4e2d\u6587 (Chinese) \u65e5\u672c\u8a9e (Japanese) Global Offices SHL's locations around the world. Home Products Pro"
+}
