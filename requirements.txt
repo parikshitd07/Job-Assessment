@@ -12,9 +12,5 @@ openpyxl==3.1.5
 # LLM Integration (CRITICAL for assignment) - NEW SDK
 google-genai>=1.47.0
 
-# Embeddings for semantic search - Compatible versions
-sentence-transformers==3.3.1
-torch==2.5.1
-
 # Production server
 gunicorn==23.0.0
