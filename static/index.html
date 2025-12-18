@@ -340,27 +340,50 @@
             }
         }
 
-        function displayRecommendations(recommendations) {
-            const container = document.getElementById('recommendations');
-            container.innerHTML = '';
 
-            if (!recommendations || recommendations.length === 0) {
-                container.innerHTML = '<p>No recommendations found.</p>';
-            } else {
-                recommendations.forEach((rec, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'assessment-card';
-                    card.innerHTML = `
-                        <h3>${index + 1}. ${rec.name}</h3>
-                        <a href="${rec.url}" target="_blank">${rec.url}</a>
-                    `;
+function displayRecommendations(recommendations) {
+    const container = document.getElementById('recommendations');
+    container.innerHTML = '';
 
-                    container.appendChild(card);
-                });
-            }
+    if (!recommendations || recommendations.length === 0) {
+        container.innerHTML = '<p>No recommendations found.</p>';
+        return;
+    }
 
-            document.getElementById('results').classList.add('show');
-        }
+    recommendations.forEach((rec, index) => {
+        const card = document.createElement('div');
+        card.className = 'assessment-card';
+
+        card.innerHTML = `
+            <h3>${index + 1}. ${rec.name || 'Assessment'}</h3>
+
+            <p><strong>Description:</strong> ${rec.description || 'N/A'}</p>
+
+            <p><strong>Duration:</strong> ${rec.duration ? rec.duration + ' minutes' : 'N/A'}</p>
+
+            <p><strong>Adaptive Support:</strong> ${rec.adaptive_support || 'N/A'}</p>
+
+            <p><strong>Remote Support:</strong> ${rec.remote_support || 'N/A'}</p>
+
+            <p><strong>Test Type:</strong> ${
+                rec.test_type && rec.test_type.length
+                    ? rec.test_type.join(', ')
+                    : 'N/A'
+            }</p>
+
+            <p>
+                <strong>Assessment URL:</strong>
+                <a href="${rec.url}" target="_blank">${rec.url}</a>
+            </p>
+        `;
+
+        container.appendChild(card);
+    });
+
+    document.getElementById('results').classList.add('show');
+}
+
+
 
         function showError(message) {
             const errorDiv = document.getElementById('error');
