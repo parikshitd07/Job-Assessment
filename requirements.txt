@@ -1,19 +1,20 @@
-# Core dependencies
-python=3.11
-flask==3.0.0
-flask-cors==4.0.0
-requests==2.31.0
-beautifulsoup4==4.12.2
-lxml==4.9.3
-pandas==2.1.4
-numpy==1.26.2
-scikit-learn==1.3.2
-python-dotenv==1.0.0
-openpyxl==3.1.2
+flask==3.1.0
+flask-cors==5.0.0
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+pandas==2.2.3
+numpy==2.0.2
+scikit-learn==1.5.2
+python-dotenv==1.0.1
+openpyxl==3.1.5
 
 # LLM Integration (CRITICAL for assignment) - NEW SDK
 google-genai>=1.47.0
 
-# Embeddings for semantic search
-sentence-transformers==2.2.2
-torch==2.1.2
+# Embeddings for semantic search - Compatible versions
+sentence-transformers==3.3.1
+torch==2.5.1
+
+# Production server
+gunicorn==23.0.0
