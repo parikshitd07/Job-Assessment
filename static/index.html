@@ -277,7 +277,7 @@
     </div>
     
     <script>
-        const API_URL = 'http://localhost:5000';
+        const API_URL = window.location.origin;
         
         function setExample(text) {
             document.getElementById('query').value = text;
@@ -317,7 +317,7 @@
                 const data = await response.json();
                 
                 if (response.ok) {
-                    displayRecommendations(data.recommendations);
+                    displayRecommendations(data.recommendations || data.recommended_assessments);
                 } else {
                     showError(data.error || 'An error occurred');
                 }
