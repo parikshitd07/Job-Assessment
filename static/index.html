@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,55 +11,55 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 30px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 2em;
             margin-bottom: 10px;
         }
-        
+
         .header p {
             opacity: 0.9;
             font-size: 1.1em;
         }
-        
+
         .content {
             padding: 30px;
         }
-        
+
         .input-group {
             margin-bottom: 20px;
         }
-        
+
         .input-group label {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
             color: #333;
         }
-        
+
         .input-group textarea {
             width: 100%;
             padding: 12px;
@@ -70,18 +71,18 @@
             min-height: 120px;
             transition: border-color 0.3s;
         }
-        
+
         .input-group textarea:focus {
             outline: none;
             border-color: #667eea;
         }
-        
+
         .button-group {
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
         }
-        
+
         button {
             flex: 1;
             padding: 14px 24px;
@@ -92,43 +93,43 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-        
+
         .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
         }
-        
+
         .btn-secondary {
             background: #f0f0f0;
             color: #333;
         }
-        
+
         .btn-secondary:hover {
             background: #e0e0e0;
         }
-        
+
         button:disabled {
             opacity: 0.6;
             cursor: not-allowed;
             transform: none !important;
         }
-        
+
         .loading {
             text-align: center;
             padding: 30px;
             color: #667eea;
             display: none;
         }
-        
+
         .loading.show {
             display: block;
         }
-        
+
         .spinner {
             border: 4px solid #f3f3f3;
             border-top: 4px solid #667eea;
@@ -138,26 +139,31 @@
             animation: spin 1s linear infinite;
             margin: 0 auto 15px;
         }
-        
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        
+
         .results {
             display: none;
         }
-        
+
         .results.show {
             display: block;
         }
-        
+
         .results h2 {
             color: #333;
             margin-bottom: 20px;
             font-size: 1.5em;
         }
-        
+
         .assessment-card {
             background: #f8f9fa;
             border-left: 4px solid #667eea;
@@ -166,29 +172,29 @@
             border-radius: 8px;
             transition: all 0.3s;
         }
-        
+
         .assessment-card:hover {
             transform: translateX(5px);
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .assessment-card h3 {
             color: #667eea;
             margin-bottom: 8px;
             font-size: 1.1em;
         }
-        
+
         .assessment-card a {
             color: #764ba2;
             text-decoration: none;
             word-break: break-all;
             font-size: 0.9em;
         }
-        
+
         .assessment-card a:hover {
             text-decoration: underline;
         }
-        
+
         .error {
             background: #fee;
             border-left: 4px solid #f44;
@@ -198,23 +204,23 @@
             margin-bottom: 20px;
             display: none;
         }
-        
+
         .error.show {
             display: block;
         }
-        
+
         .examples {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             margin-top: 30px;
         }
-        
+
         .examples h3 {
             color: #333;
             margin-bottom: 15px;
         }
-        
+
         .example-btn {
             background: white;
             border: 2px solid #667eea;
@@ -226,82 +232,87 @@
             font-size: 0.9em;
             transition: all 0.3s;
         }
-        
+
         .example-btn:hover {
             background: #667eea;
             color: white;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>🎯 SHL Assessment Recommender</h1>
             <p>Get personalized assessment recommendations for your hiring needs</p>
         </div>
-        
+
         <div class="content">
             <div class="input-group">
                 <label for="query">Enter your job description or query:</label>
-                <textarea 
-                    id="query" 
-                    placeholder="E.g., I am hiring for Java developers who can also collaborate effectively with my business teams..."
-                ></textarea>
+                <textarea id="query"
+                    placeholder="E.g., I am hiring for Java developers who can also collaborate effectively with my business teams..."></textarea>
             </div>
-            
+
             <div class="button-group">
                 <button class="btn-primary" onclick="getRecommendations()">Get Recommendations</button>
                 <button class="btn-secondary" onclick="clearResults()">Clear</button>
             </div>
-            
+
             <div class="error" id="error"></div>
-            
+
             <div class="loading" id="loading">
                 <div class="spinner"></div>
                 <p>Finding the best assessments for you...</p>
             </div>
-            
+
             <div class="results" id="results">
                 <h2>Recommended Assessments</h2>
                 <div id="recommendations"></div>
             </div>
-            
+
             <div class="examples">
                 <h3>Try these examples:</h3>
-                <button class="example-btn" onclick="setExample('I am hiring for Java developers who can also collaborate effectively with my business teams')">Java Developer</button>
-                <button class="example-btn" onclick="setExample('Senior Data Analyst with 5 years of experience and expertise in SQL, Excel and Python')">Data Analyst</button>
-                <button class="example-btn" onclick="setExample('Content Writer required, expert in English and SEO')">Content Writer</button>
-                <button class="example-btn" onclick="setExample('Entry level sales position for new graduates')">Sales Graduate</button>
+                <button class="example-btn"
+                    onclick="setExample('I am hiring for Java developers who can also collaborate effectively with my business teams')">Java
+                    Developer</button>
+                <button class="example-btn"
+                    onclick="setExample('Senior Data Analyst with 5 years of experience and expertise in SQL, Excel and Python')">Data
+                    Analyst</button>
+                <button class="example-btn"
+                    onclick="setExample('Content Writer required, expert in English and SEO')">Content Writer</button>
+                <button class="example-btn" onclick="setExample('Entry level sales position for new graduates')">Sales
+                    Graduate</button>
             </div>
         </div>
     </div>
-    
+
     <script>
         const API_URL = window.location.origin;
-        
+
         function setExample(text) {
             document.getElementById('query').value = text;
         }
-        
+
         function clearResults() {
             document.getElementById('query').value = '';
             document.getElementById('results').classList.remove('show');
             document.getElementById('error').classList.remove('show');
         }
-        
+
         async function getRecommendations() {
             const query = document.getElementById('query').value.trim();
-            
+
             if (!query) {
                 showError('Please enter a query or job description');
                 return;
             }
-            
+
             // Show loading
             document.getElementById('loading').classList.add('show');
             document.getElementById('results').classList.remove('show');
             document.getElementById('error').classList.remove('show');
-            
+
             try {
                 const response = await fetch(`${API_URL}/recommend`, {
                     method: 'POST',
@@ -313,9 +324,9 @@
                         top_k: 10
                     })
                 });
-                
+
                 const data = await response.json();
-                
+
                 if (response.ok) {
                     displayRecommendations(data.recommendations || data.recommended_assessments);
                 } else {
@@ -328,11 +339,11 @@
                 document.getElementById('loading').classList.remove('show');
             }
         }
-        
+
         function displayRecommendations(recommendations) {
             const container = document.getElementById('recommendations');
             container.innerHTML = '';
-            
+
             if (!recommendations || recommendations.length === 0) {
                 container.innerHTML = '<p>No recommendations found.</p>';
             } else {
@@ -340,24 +351,25 @@
                     const card = document.createElement('div');
                     card.className = 'assessment-card';
                     card.innerHTML = `
-                        <h3>${index + 1}. ${rec.assessment_name}</h3>
-                        <a href="${rec.assessment_url}" target="_blank">${rec.assessment_url}</a>
+                        <h3>${index + 1}. ${rec.name}</h3>
+                        <a href="${rec.url}" target="_blank">${rec.url}</a>
                     `;
+
                     container.appendChild(card);
                 });
             }
-            
+
             document.getElementById('results').classList.add('show');
         }
-        
+
         function showError(message) {
             const errorDiv = document.getElementById('error');
             errorDiv.textContent = message;
             errorDiv.classList.add('show');
         }
-        
+
         // Allow Enter key to submit (with Shift+Enter for new line)
-        document.getElementById('query').addEventListener('keydown', function(e) {
+        document.getElementById('query').addEventListener('keydown', function (e) {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 getRecommendations();
@@ -365,4 +377,5 @@
         });
     </script>
 </body>
+
 </html>
