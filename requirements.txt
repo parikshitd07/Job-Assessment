@@ -14,5 +14,4 @@ google-genai>=1.47.0
 
 # Production server
 gunicorn==23.0.0
-flask-cors==4.0.0
 
