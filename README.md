@@ -210,4 +210,4 @@ python3 evaluate.py
 ✅ **Documentation**: This README + inline comments
 
 ## Author
-Vivek - SHL GenAI Intern Assessment
+Parikshit - SHL GenAI Intern Assessment
